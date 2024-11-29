@@ -1,14 +1,13 @@
 'use client';
 
 import { Checkbox } from '@/components/ui/checkbox';
-import { useState } from 'react';
 
 interface MyCustomCheckboxProps {
   title: string;
   subTitle: string;
   disable?: boolean;
   checked?: boolean;
-  onChangeChecked: () => void;
+  onChangeChecked?: () => void;
 }
 
 export function MyCustomCheckbox({
